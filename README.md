@@ -1,15 +1,20 @@
 # WebstaurantStoreTask
 
 This project is for sharing results of the WebstaurantStore Code Screen Task.
-Results are JMeter .jmx file and html report.
 
-You can run test locally too.
-1. Clone/copy webstaurantstore_outlet.jmx to your machine into ${JMETER_HOME}/bin folder
-2. Run test
-   ```
-   ${JMETER_HOME}/bin/jmeter -n -t webstaurantstore_outlet.jmx -l results.jtl
-   ```
-4. Generate report based on .jtl file
-   ```
-   ${JMETER_HOME}/bin/jmeter -g results.jtl -o webstaurantstore_outlet_report
-   ```
+Results are in the following files:
+1. webstaurantstore_outlet.jmx - JMeter test plan
+2. results.jtl - JMeter results in csv format (ran with command `${JMETER_HOME}/bin/jmeter -n -t webstaurantstore_outlet.jmx -l results.jtl`)
+3. results.xls - aggregated results/charts in Excel format
+
+Conclusions:
+- Average response time for opening pages with different outlet products (with all embedded resources) - 2790 ms.
+- Median - 2630 ms
+- Min response time - 1400 ms
+- Max response time - 6040 ms
+
+- Round trip network time between my laptop and webstaurantstore.com was approximately 28 ms, which is relatively small.
+
+- The average outlet product page requires 1.739 kB to download.
+- During 15 minutes of testing 61 requests were performed.
+- With such a small load it doesn't make sense to analyze throughput results.
