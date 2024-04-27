@@ -1,6 +1,6 @@
 # WebstaurantStoreTask
 
-This project is for sharing results of the WebstaurantStore Code Screen Task
+This project is for sharing results of the WebstaurantStore Code Screen Task.
 Result are JMeter .jmx file and html report.
 
 You can run test locally too.
