@@ -1,7 +1,7 @@
 # WebstaurantStoreTask
 
 This project is for sharing results of the WebstaurantStore Code Screen Task.
-Result are JMeter .jmx file and html report.
+Results are JMeter .jmx file and html report.
 
 You can run test locally too.
 1. Clone/copy webstaurantstore_outlet.jmx to your machine into ${JMETER_HOME}/bin folder
